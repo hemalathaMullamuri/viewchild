@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<child-a></child-a>
+<button (click)="sendMsg()">Send Message to Child</button>
+<h4 customHover='pink'>This is an example of Custom Directive</h4>
+<input type="color" [(ngModel)]="selectorColor">
+<input type="text" #fName ><br />
+<input type="text" #lName >
+<child-b></child-b>
+<child-b></child-b>
+<child-b></child-b>
+<child-b></child-b>
+<button (click)="sendMessageToChildB()">Send Message to Child B</button>
+<input type="number" [(ngModel)]="childIndex">

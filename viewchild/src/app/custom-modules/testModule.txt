@@ -1,0 +1,16 @@
+import {NgModule } from '@angular/core';
+import { CountriesComponent } from '../custom-component/countries-component';
+import { HoverDirective } from '../custom-directives/hover-directive';
+import { CountriesService } from '../services/countries.http.service';
+import { CommonModule } from '@angular/common';
+
+@NgModule({
+declarations:[
+    CountriesComponent,
+    HoverDirective
+],
+imports:[CommonModule],
+providers:[CountriesService],
+exports: [CountriesComponent]
+})
+export class CountriesModule {}
